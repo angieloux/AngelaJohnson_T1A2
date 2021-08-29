@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+  font-family: 'Fjalla One', sans-serif;
+  color: white;
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)),url(/src/Images/home-background-scale.png);
+  background-position: -680 center;
+  background-size: cover;
+  position: relative;
+}
+
+/* HEADER + NAV BAR  */
+
+nav {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2% 3%;
+
+}
+
+.nav-container li {
+  display: inline-block;
+  list-style: none;
+  position: relative;
+  font-size: 1.2rem;
+  padding: 10px 10px;
+}
+
+.nav-container li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: white;
+  display: block;
+  margin: auto;
+  transition: 2s;
+}
+
+.nav-container li:hover::after{
+  width:100%
+}
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
+/* MAIN CONTENT */
+
+.main-container {
+  height: 80%;
+  text-align: center;
+  position: relative;
+  padding-top: 70px;
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+
+h1 {  
+  font-size: 3.7rem;
+  width: 70%;
+  line-height: 3rem;
+  padding-top: 100px;
+  font-weight: bold;
+  text-decoration:underline overline ;
+  text-underline-offset: 10px;
+}
+
+h2 {
+  width: 80vw;
+  font-size: 1.4em;
+  padding-top: 30px;
+  padding-bottom: 70px;
+  font-family: 'Teko', sans-serif;
+  
+}
+
+.call-to-action {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  border: none;
+  font-size: 20px;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: bold;
+
+}
+
+.call-to-action:hover {
+  background-color: rgba(96, 143, 230,0.5);
+  transition: 1s;
+  border: 1px solid white;
+  padding: 12px 13px;
+}
+
+
+/* FOOTER */
+
+footer {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  height: 20%;
+}
+
+.contact-container {
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  margin: -5%;
+}
+
+.contact-links {
+  font-size: 3rem;
+}
+
+a {
+  color: white;
+}
+
+/* Correcting for Tablet*/
+@media only screen and (min-width: 600px) {
+  body {
+    background-image: linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)),url(/src/Images/home-background-scale.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+}
+
+/* Correcting for desktop 1000 and above */
+@media only screen and (min width: 1000px) {
+}
+
+
+/*# sourceMappingURL=style.css.map */

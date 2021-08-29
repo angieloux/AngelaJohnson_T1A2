@@ -4,67 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script src="https://kit.fontawesome.com/8347962c35.js"
-        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8347962c35.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Kaisei+HarunoUmi&family=Teko:wght@300;400&display=swap" rel="stylesheet">
     <title>AJ | Web Developer</title>
 </head>
 
 <body>
-    <!-- Page container -->
-    <div class="page-container">
-        <header>
-            <!-- COMPONENT: NAVIGATION BAR (MENU) -->
-            <nav class="top-nav">
-                <!-- <i class="material-icons">home</i>
-                <a class="active" href="index.html">Home</a> -->
-                <i class="material-icons">face</i>
-                <a href="Experience.html">About</a>
-                <i class="material-icons">work</i>
-                <a href="Projects.html">Projects</a>
-                <i class="material-icons">menu_book</i>
-                <a href="Blog.html">Blog</a>
-                <i class="material-icons">alternate_email</i>
-                <a href="Contact.html">Contact</a>
-            </nav>
-        </header>
 
-        <!-- MAIN CONTENT -->
+    <!-- TEXT COMPONENT: NAVIGATION BAR -->
+    <header class="header">
+        <nav>
+            <!-- <label for="toggle">☰</label>
+            <input type="checkbox" id="toggle" data-np-checked="1"> -->
+            <ul class="nav-container">
+                <li><a class="link" href="Projects.html">Projects</a></li>
+                <li><a class="link" href="Experience.html">About Me</a></li>
+                <li><a class="link" href="Blog.html">Blog</a></li>
+                <li><a class="link" href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
-        <main class="main-homepage">
-            <div class="intro">
-                <h1>Hi! I'm AJ.</h1>
-                <img id="curly-brace" src="/src/Images/white-curly-bracket.png" alt="" width=50vw>
+        <!-- <nav>
+            <i class="material-icons">home</i>
+            <a class="active" href="index.html">Home</a>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="Experience.html">about me
+                    <i class="material-icons">face</i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="Projects.html">projects
+                    <i class="material-icons">work</i></a>
+                </li>
+            
+                <li class="nav-item">
+                    <a href="Blog.html">blog
+                    <i class="material-icons">menu_book</i></a>
+                </li>
+            
+                <li class="nav-item">
+                    <a href="Contact.html">contact
+                    <i class="material-icons">alternate_email</i></a>
+                </li>
+        </nav> -->
+    </header>
+    <!-- TEXT COMPONENT: MAIN CONTENT -->
+    <main class="main-container">
+        <h1>Hi! I'm AJ.</h1>
+        <h2> Aspiring web developer, philomath, avid traveller, vinyl collector, cinephile, game lover.</h2>
+
+        <!-- TEXT COMPONENT: CALL TO ACTION -->
+        <button class="call-to-action">
+            <a href="" target="_blank"> Download my resume
+                <i class="material-icons">download_for_offline</i></a>
+        </button>
+    </main>
+
+    <!-- TEXT COMPONENT: FOOTER W/ CONTACT LINKS TO SOCIAL MEDIA -->
+
+    <footer>
+        <div class="contact-container">
+            <span>Find me:</span> 
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/angieloux" target="_blank">
+                    <i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/angieloux" target="_blank">
+                    <i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/angielou.x/" target="_blank">
+                    <i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/angie_loux" target="_blank">
+                <i class="fab fa-twitter"></i></a>
             </div>
-            <h2> Aspiring web developer, philomath, avid traveller, vinyl collector, cinephile, game lover.</h2>
-
-            <!-- COMPONENT: CALL TO ACTION -->
-            <a class="download-button" href="" target="_blank"><i
-                    class="material-icons">download_for_offline</i>Download my resume</a>
-
-            <!-- COMPONENT: FOOTER W/ CONTACT LINKS TO SOCIAL MEDIA -->
-
-            <footer class="footer">
-                <ul class="contact-list">
-                    <li class="contact-link"><a href="https://www.linkedin.com/in/angieloux" target="_blank"><i
-                                class="fab fa-linkedin-in"></i></a></li>
-                    <li class="contact-link"><a href="https://github.com/angieloux" target="_blank"><i
-                                class="fab fa-github"></i></a></li>
-                    <li class="contact-link"><a href="https://www.instagram.com/angielou.x/" target="_blank"><i
-                                class="fab fa-instagram"></i></a></li>
-                    <li class="contact-link"><a href="https://twitter.com/angie_loux" target="_blank"><i
-                                class="fab fa-twitter"></i></a></li>
-                </ul>
-                <p class="text">© 2021 Angela Johnson</p>
-            </footer>
-        </main>
-
-
-    </div> <!-- / page container -->
+            <span id="copyright">© 2021 Angela Johnson</p></span>
+        </div>  
+    </footer>
+</div> <!-- /Page container -->
 </body>
-
 </html>
