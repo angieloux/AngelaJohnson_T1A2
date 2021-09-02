@@ -15,44 +15,124 @@ body {
   position: relative;
 }
 
-/* HEADER + NAV BAR  */
-
-nav {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  justify-content: space-evenly;
-  padding: 2% 3%;
-
-}
-
-.nav-container li {
-  display: inline-block;
-  list-style: none;
-  position: relative;
-  font-size: 1.2rem;
-  padding: 10px 10px;
-}
-
-.nav-container li::after{
-  content: '';
-  width: 0%;
-  height: 2px;
-  background: white;
-  display: block;
-  margin: auto;
-  transition: 2s;
-}
-
-.nav-container li:hover::after{
-  width:100%
-}
 a {
-  text-transform: uppercase;
-  text-decoration: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+  }
+
+/* ------HAMBURGER NAVIGATION MENU FOR IPHONE--------- */
+
+/* Hamburger icon display */
+.nav-container label {
+    display: block;
+    cursor: pointer;
+    margin: 0 40px 0 0;
+    font-size: 2.5rem;
+    line-height: 70px;
+    width: 26px;
+    float: right;
+    color: white;
 }
+
+.nav-container {
+    background-color: rgba(9, 14, 37, 0.9);
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+    /* -webkit-box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.2); */
+    
+}
+.nav-list {
+    text-align: center;
+    width: 100%;
+    display: none;
+    /* -webkit-box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.2); */
+    border-top: 1px solid #EAEAEB;
+}
+.nav-list a {
+    background-color: rgba(9, 14, 37, 0.9);
+    display: block;
+    margin: 0;
+    z-index: -1;
+}
+
+.nav-list a:hover {
+    background-color: #4e976f;
+    color: white;
+}
+#hamburger-button:checked + .nav-list {
+    display: block;
+    position: absolute;
+    top: 70px;
+    z-index: 2;
+    font-size: 2rem;
+}
+
+#hamburger-button {
+    display: none;
+}
+
+/* ------EXPANDED HORIZONTAL NAVIGATION MENU FOR BIGGER SCREENS--------- */
+
+
+@media only screen and (min-width: 500px){
+  
+  .nav-list {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.4rem;
+    border-top:  none;
+  }
+  
+  .nav-container {
+      background-color: transparent;
+      box-shadow: none;
+      line-height: inherit;
+      padding-top:20px;
+  }
+
+  .nav-list a {
+    text-decoration: none;
+    background-color: transparent;
+    text-transform: uppercase;
+  }
+  
+  /* Don't show hamburger menu */
+  .nav-container label {
+    display: none;
+  }
+ 
+  .nav-list li {
+    list-style: none;
+    font-size: 1.2rem;
+  }
+
+  .nav-list li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: white;
+    margin: auto;
+    transition: 2s;
+    display: block;
+
+  }
+  
+  .nav-list li:hover::after{
+    width:100%;
+    background-color: white;
+
+}
+
+  .nav-list a:hover {
+      background-color: transparent;
+    
+}
+}
+
 
 
 /* MAIN CONTENT */
@@ -69,24 +149,31 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center; 
+  padding-top: 7rem;
+}
+
+h1, .main-container h2, .link {
+    text-shadow: 2px 2px #0a1f11;
 }
 
 h1 {  
   font-size: 3.7rem;
   width: 70%;
   line-height: 3rem;
+  text-shadow: 2px 2px #0a1f11;
   padding-top: 100px;
   font-weight: bold;
   text-decoration:underline overline ;
   text-underline-offset: 10px;
 }
 
-h2 {
+.main-container h2 {
   width: 80vw;
-  font-size: 1.4em;
+  color: white;
+  text-shadow: 2px 2px #0a1f11;
+  font-size: 1.9em;
   padding: 30px 0 50px 0;
   font-family: 'Teko', sans-serif;
-  
 }
 
 .call-to-action {
@@ -117,32 +204,26 @@ h2 {
 
 /* FOOTER */
 
-footer {
+.footer-container {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  position: relative;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
   flex-direction: column;
-  align-items: center;
-  height: 20%;
-}
-
-.contact-container {
-  display: inline-block;
   justify-content: center;
+  align-items: center;
   text-align: center;
-  margin: -5%;
+  margin-bottom: 3rem;
 }
 
 .contact-links {
   font-size: 3rem;
 }
 
-a {
-  color: white;
-}
 
 /* Correcting for Tablet*/
 @media only screen and (min-width: 600px) {

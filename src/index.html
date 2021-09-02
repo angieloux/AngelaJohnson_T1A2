@@ -1,10 +1,12 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Angela Johnson (AJ) | Melbourne-based aspiring web developer, philomath, avid traveller, vinyl collector, cinephile, game lover.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" integrity="">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://kit.fontawesome.com/8347962c35.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,48 +17,23 @@
 
 <body>
 
-    <!-- TEXT COMPONENT: NAVIGATION BAR -->
-    <header class="header">
-        <nav>
-            <!-- <label for="toggle">☰</label>
-            <input type="checkbox" id="toggle" data-np-checked="1"> -->
-            <ul class="nav-container">
+    <header>
+        <nav class="nav-container">
+            <label for="hamburger-button">&#9776;</label>
+            <input type="checkbox" id="hamburger-button">
+            <ul class="nav-list" id="nav-list">
                 <li><a class="link" href="Projects.html">Projects</a></li>
-                <li><a class="link" href="Experience.html">About Me</a></li>
+                <li><a class="link" href="AboutMe.html">About Me</a></li>
                 <li><a class="link" href="Blog.html">Blog</a></li>
                 <li><a class="link" href="Contact.html">Contact</a></li>
             </ul>
         </nav>
-
-        <!-- <nav>
-            <i class="material-icons">home</i>
-            <a class="active" href="index.html">Home</a>
-            <ul class="nav-list">
-                <li class="nav-item">
-                    <a href="Experience.html">about me
-                    <i class="material-icons">face</i></a>
-                </li>
-                <li class="nav-item">
-                    <a href="Projects.html">projects
-                    <i class="material-icons">work</i></a>
-                </li>
-            
-                <li class="nav-item">
-                    <a href="Blog.html">blog
-                    <i class="material-icons">menu_book</i></a>
-                </li>
-            
-                <li class="nav-item">
-                    <a href="Contact.html">contact
-                    <i class="material-icons">alternate_email</i></a>
-                </li>
-        </nav> -->
     </header>
 
     <!-- TEXT COMPONENT: MAIN CONTENT -->
     <main class="main-container">
-        <h1>Hi! I'm AJ.</h1>
-        <h2> Aspiring web developer, philomath, avid traveller, vinyl collector, cinephile, game lover.</h2>
+        <h1 id="title">Hi! I'm AJ.</h1>
+        <h2 id="subtitle"> Aspiring web developer, philomath, avid traveller, vinyl collector, cinephile, game lover.</h2>
 
         <!-- TEXT COMPONENT: CALL TO ACTION -->
         <button class="call-to-action">
@@ -68,7 +45,7 @@
     <!-- TEXT COMPONENT: FOOTER W/ CONTACT LINKS TO SOCIAL MEDIA -->
 
     <footer>
-        <div class="contact-container">
+        <div class="footer-container">
             <span>Find me:</span> 
             <div class="contact-links">
                 <a href="https://www.linkedin.com/in/angieloux" target="_blank">
@@ -86,3 +63,6 @@
 </div> <!-- /Page container -->
 </body>
 </html>
+
+
+<!-- TO DO: Change jpegs to png -->
