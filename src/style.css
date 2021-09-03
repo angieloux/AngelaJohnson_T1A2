@@ -21,7 +21,7 @@ a {
     color: white;
   }
 
-p {
+p, li{
     font-family: sans-serif;
 }
 
@@ -133,7 +133,8 @@ p {
 
   .nav-list a:hover {
       background-color: transparent;
-    
+      font-size: 2rem;
+      transition: 2s;
 }
 }
 
@@ -242,7 +243,7 @@ h1 {
   }
  
   .content-titles {
-    padding: 10px 10px;
+    padding: 20px 20px;
   }
   
   article {
@@ -253,14 +254,14 @@ h1 {
     align-items: center;
   }
   
-  .project-box {
+  .content-box {
     flex-direction: column;
-    padding-top: 2rem;
+    padding: 2rem 0;
     width: 100%;
     text-align: center;
   }
 
-  .page-text {
+  .content-text {
     margin: 0 20px;
 }
 
@@ -268,7 +269,7 @@ h1 {
     box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.2);
 }
 
-  /* .text-wrapper {
+  /* .content-text-wrapper {
     margin: 0 20px;
 } */
 
@@ -278,6 +279,7 @@ h1 {
     .page-container {
         display: flex;
         flex-direction: row-reverse;
+        height: inherit;
 
     }
     .page-content {
@@ -285,22 +287,24 @@ h1 {
         flex-wrap: wrap;
         padding: 10px 10px;
         justify-content: center;
+        height: inherit;
 
    }
     .page-rectangle {
         flex-basis: 50%;
+        height: 100vh;
         /* keep title text scrolling with .page-content */
+        display: flex;
         position: sticky;
         top: 0px;
-        padding-top: 15%;
 
     }
-
-    .project-box {
+    .content-box {
         flex-basis: 30%;
+        
     }
 
-    .page-text {
+    .content-text {
         flex-basis: 100%;
         margin: 0;
     }
@@ -309,9 +313,33 @@ h1 {
         flex-basis: 100%;
     }
 
- 
 }
-    
+
+/* ----------ABOUT ME PAGE ----------*/
+
+.content-text-wrapper {
+    /* width: 80%; */
+}
+.content-text-wrapper li {
+    text-align: center;
+    list-style-position:inside;
+    padding-top: 10px;
+}
+
+
+
+
+@media only screen and (min-width: 500px){
+
+#about-me-content {
+    flex-direction: column;
+}
+
+/* -----Flip content side (title on left, content on right) ----------*/
+#rectangle-left {
+    order: 1;
+}
+}
 
 
 
