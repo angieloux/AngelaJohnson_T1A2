@@ -21,6 +21,10 @@ a {
     color: white;
   }
 
+p {
+    font-family: sans-serif;
+}
+
 /* ------HAMBURGER NAVIGATION MENU FOR IPHONE--------- */
 
 /* Hamburger icon display */
@@ -156,9 +160,11 @@ h1, .main-container h2, .link {
     text-shadow: 2px 2px #0a1f11;
 }
 
-h1 {  
-  font-size: 3.7rem;
+.main-container h1 {  
   width: 70%;
+}  
+h1 {
+  font-size: 3.7rem;
   line-height: 3rem;
   text-shadow: 2px 2px #0a1f11;
   padding-top: 100px;
@@ -201,6 +207,130 @@ h1 {
   padding: 12px 13px;
 }
 
+/* PROJECTS */
+
+
+.page-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.page-rectangle {
+    width: 100%;
+    background-color:rgba(10, 78, 78, 0.1);
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top:rgba(254, 254, 254, 0.8) solid;
+
+  }
+
+#arrow-down {
+    padding-top: 100px;
+    font-size: 7em;
+  }
+  
+.page-content {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    color: black;
+    border:rgba(254, 254, 254, 0.8) solid;
+  }
+ 
+  .content-titles {
+    padding: 10px 10px;
+  }
+  
+  article {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .project-box {
+    flex-direction: column;
+    padding-top: 2rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .page-text {
+    margin: 0 20px;
+}
+
+.project-image {
+    box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+  /* .text-wrapper {
+    margin: 0 20px;
+} */
+
+  
+
+@media only screen and (min-width: 500px){
+    .page-container {
+        display: flex;
+        flex-direction: row-reverse;
+
+    }
+    .page-content {
+        flex-basis: 50%;
+        flex-wrap: wrap;
+        padding: 10px 10px;
+        justify-content: center;
+
+   }
+    .page-rectangle {
+        flex-basis: 50%;
+        /* keep title text scrolling with .page-content */
+        position: sticky;
+        top: 0px;
+        padding-top: 15%;
+
+    }
+
+    .project-box {
+        flex-basis: 30%;
+    }
+
+    .page-text {
+        flex-basis: 100%;
+        margin: 0;
+    }
+    
+    .project-image {
+        flex-basis: 100%;
+    }
+
+ 
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* FOOTER */
 
@@ -224,6 +354,10 @@ h1 {
   font-size: 3rem;
 }
 
+/* Don't show footer on projects/aboutme/blog */
+.footer-container-hidden {
+    display: none;
+}
 
 /* Correcting for Tablet*/
 @media only screen and (min-width: 600px) {
