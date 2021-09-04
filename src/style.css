@@ -17,6 +17,53 @@ body {
   background-color:rgba(9, 22, 56, 0.7);
 }
 
+@media only screen and (min-width: 500px){
+  body {
+    background-image: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)),url(/src/Images/home-background-scale.png);
+    background-color:rgba(9, 22, 56, 0.7);
+  }
+}
+
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
+p, span, h3, content-text-wrapper li {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: normal;
+}
+
+
+/* --------------------- FOOTER --------------------- */
+
+#copyright {
+  text-transform: uppercase;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 80%;
+}
+
+/* ---- Footer: home page ---- */
+
+.footer-container {
+  display: flex;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact-links a {
+  padding: 0 5px;
+}
+
+/* ---- Footer: content pages ---- */
+
 .footer-content-pages {
   display: flex;
   justify-content: center;
@@ -26,33 +73,11 @@ body {
   width: 100%;
 }     
 
-#copyright {
-  text-transform: uppercase;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 80%;
-}
 
-@media only screen and (min-width: 500px){
-    body {
-      background-image: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)),url(/src/Images/home-background-scale.png);
-      background-color:rgba(9, 22, 56, 0.7);
-    }
-}
+/* --------------------- NAVIGATION / HEADER --------------------- */
 
+/* ---- Nav: hamburger menu for mobile ---- */
 
-a {
-    text-transform: uppercase;
-    text-decoration: none;
-    color: white;
-  }
-
-p, span {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-/* ------HAMBURGER NAVIGATION MENU FOR IPHONE--------- */
-
-/* Hamburger icon display */
 .nav-container label {
     display: block;
     cursor: pointer;
@@ -69,28 +94,22 @@ p, span {
     text-align: center;
     height: 70px;
     line-height: 70px;
-    /* position: fixed;
     top: 0px; */
     width: 100%;
     border-bottom: white solid 5px;
-    /* -webkit-box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.2); */
-    
 }
+
 .nav-list {
     text-align: center;
     width: 100%;
     display: none;
-    /* -webkit-box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.2);
-            box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.2); */
     border-top: 1px solid #EAEAEB;
     background-color: rgba(9, 14, 37, 0.9);
-
 }
+
 .nav-list a {
     display: block;
     margin: 0;
-    /* z-index: -1; */
 }
 
 #active-link {
@@ -99,8 +118,8 @@ p, span {
 
 .nav-list a:hover {
     background-color: #4e976f;
-    /* color: white; */
 }
+
 #hamburger-button:checked + .nav-list {
     display: block;
     position: absolute;
@@ -109,12 +128,12 @@ p, span {
     font-size: 2rem;
 }
 
-/* Don't display checkbox */
+/* ---- Hide checkbox ---- */
 #hamburger-button {
     display: none;
 }
 
-/* ------EXPANDED HORIZONTAL NAVIGATION MENU FOR BIGGER SCREENS--------- */
+/* ---- Nav: horizontal menu for tablet/desktop ---- */
 
 
 @media only screen and (min-width: 500px){
@@ -125,11 +144,9 @@ p, span {
     font-size: 1.4rem;
     border-top:  none;
     background-color: transparent;
-    
   }
 
   .nav-container {
-      /* background-color: transparent; */
       box-shadow: none;
       line-height: inherit;
       padding-top:20px;
@@ -141,7 +158,7 @@ p, span {
 
   }
   
-  /* Don't show hamburger menu */
+  /* ---- Nav: don't show hamburger menu ---- */
   .nav-container label {
     display: none;
   }
@@ -150,6 +167,8 @@ p, span {
     list-style: none;
     font-size: 1.2rem;
   }
+
+/* ---- Nav: Expanding underline on hover ---- */
 
   .nav-list li::after{
     content: '';
@@ -165,26 +184,20 @@ p, span {
   .nav-list li:hover::after{
     width:100%;
     background-color: white;
-
-
 }
 
   .nav-list a:hover {
       background-color: transparent;
       font-size: 1.2rem;
-      transition: 2s;
-      /* font-style:oblique; */
 }
 
 #active-link {
     background-color: transparent;
     color:rgb(131, 173, 140);
-    text-decoration:underline;
-    text-decoration-line: blink;
-    
 }
 }
-
+  
+/* ---- Condense nav menu items for laptop/desktop --- */
 @media only screen and (min-width: 770px){
 .nav-list {
     justify-content:center;
@@ -192,11 +205,10 @@ p, span {
 
 .nav-list li {
     padding: 0 50px;
-
 }}
 
 
-/* MAIN CONTENT */
+/* --------------------- HOME PAGE CONTENT / INTRO --------------------- */
 
 .main-container {
   height: 80%;
@@ -216,38 +228,6 @@ h1, .main-container h2, .link {
 .main-container h1 {  
   width: 70%;
 }  
-h1 {
-  font-size: 3.7rem;
-  line-height: 3rem;
-  text-shadow: 2px 2px #0a1f11;
-  padding-top: 5rem;
-  font-weight: bold;
-  text-decoration:underline overline;
-  text-underline-offset: 10px;
-}
-
-/* Don't display find me on mobile */
-
-@media only screen and (min-width: 500px){
-  .main-container {
-  padding-top: 15rem;
-  }
-  #find-me {
-    display: unset;
-    font-family: ;
-}}
-
-@media only screen and (min-width: 1000px){
-  .main-container {
-  padding-top: 10rem;
-
-}
-}
-
-@media only screen and (min-width: 1500px){
-  .main-container {
-  padding-top: 15rem;
-}}
 
 .main-container h2 {
   width: 80vw;
@@ -258,24 +238,54 @@ h1 {
   font-family: 'Teko', sans-serif;
 }
 
+h1 {
+  font-size: 3.7rem;
+  line-height: 3rem;
+  padding-top: 5rem;
+  font-weight: bold;
+  text-decoration:underline overline;
+  text-underline-offset: 10px;
+}
+
+
+/* ---- Adjust padding of main container text for tablet ---- */
+@media only screen and (min-width: 500px){
+  .main-container {
+  padding-top: 15rem;
+}}
+
+/* ---- Adjust padding of main container text for laptops/bigger screens ---- */
+@media only screen and (min-width: 1000px){
+  .main-container {
+  padding-top: 10rem;
+
+}}
+
+/* ---- Adjust padding of main container text for desktop ---- */
+@media only screen and (min-width: 1500px){
+  .main-container {
+  padding-top: 15rem;
+}}
+
+
+/* ----- Main page content: call to action to download resume (pdf)  ----- */
+
 .call-to-action {
   display: block;
-  text-decoration: none;
-  font-family:'Fjalla One', sans-serif;
   border: white solid 2px;
   padding: 7px 10px;
   font-size: 20px;
   background-color: rgba(10, 78, 78, 0.2);
   cursor: pointer;
-
 }
 
-/* Horizontally center icon in call-to-action button */
+/* ---- Horizontally center icon in call-to-action button ---- */
 #download {
   position: relative;
   top: 5px;
 }
 
+/* ---- Hover styling on call to action button ---- */
 .call-to-action:hover {
   background-color: rgba(255,201,172,1); 
   transition: 1s;
@@ -284,19 +294,14 @@ h1 {
 }
 
 
-/* PROJECTS */
-li::marker {
-  color: rgba(10, 19, 101, 0.423);
-  font-weight: bold;
-  
-}
+/* --------------------- CONTENT PAGES (PROJECTS/ABOUT ME/BLOG --------------------- */
 
 
+/* ---- Align page content in one scrollable column on phone/tablet ---- */
 .page-container{
     display: flex;
     flex-direction: column;
     width: 100%;
-    /* z-index: 1; */
 }
 
 .page-rectangle {
@@ -307,8 +312,6 @@ li::marker {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border-top:rgba(254, 254, 254, 0.8) solid; */
-
   }
 
 #arrow-down {
@@ -324,7 +327,7 @@ li::marker {
     color: black;
   }
 
-  .content-text-wrapper li, .content-text-wrapper p{
+  .content-text-wrapper li, .content-text-wrapper p, h3{
     border-bottom:rgba( 21, 64,113,0.2) solid 2px;
     padding: 2%;
     font-size: 1.2rem;
@@ -334,14 +337,6 @@ li::marker {
   .content-titles {
     padding: 20px 20px;
     font-size:1.8rem;
-  }
-  
-  article {
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
   }
   
   .content-box {
@@ -356,17 +351,13 @@ li::marker {
     margin: 20px 20px;
 }
 
-.project-image {
+.project-image, .blog-image {
     box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.2);
 }
 
-  /* .content-text-wrapper {
-    margin: 0 20px;
-} */
 .icon-container {
     display: flex;
     flex-flow: row wrap;
-    height: min-content;
     justify-content: center;
     margin-top: 2%;
 }
@@ -375,20 +366,19 @@ li::marker {
     margin: 2% 3%;
 }
   
+/* ---- About Me: Taper experience paragraphs from right to left ---- */
 .right {
   text-align: right;
 }
-
 .left {
   text-align: left;
 }
 
 .content-text-wrapper {
-/* background-color: rgba(156, 202, 166, 0.1); */
-/* box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.2); */
 border-radius: 20px;
 }
 
+/* ---- Align page content in side-by-side boxes on tablet---- */
 
 @media only screen and (min-width: 500px){
     .page-container {
@@ -403,41 +393,31 @@ border-radius: 20px;
         padding: 10px 10px;
         justify-content: center;
         height: inherit;
-
    }
+/* ---- Keep title text scrolling with .page-content ---- */
     .page-rectangle {
         flex-basis: 50%;
-        height: 100vh;
-
-        /* keep title text scrolling with .page-content */
         display: flex;
         position: sticky;
         top: 0px;
-
     }
-    .content-box {
-        flex-basis: 90%;
-        
-    }
-
-    .content-text {
-        margin: 0;
-    }
-
 }
 
+/* ---- 21 things: list styling ---- */
 
+.content-text-wrapper li {
+  list-style-position:inside; 
+}
+
+li::marker {
+  color: rgba(10, 19, 101, 0.423);
+  font-weight: bold;
+}
 
 @media only screen and (min-width: 770px){
     .content-text-wrapper {
         margin: auto 6%;
-        /* background-color: rgba(166, 216, 177, 0.238); */
         border-radius: 20px;
-    
-    }
-    
-    .page-content {
-      flex-wrap: wrap;
     }
     
     .content-box {
@@ -445,175 +425,20 @@ border-radius: 20px;
       flex-basis: 50%;
     }
     
-    
     #about-me-box {
     flex-basis: 80%;
-    
     }
-
-   
 }
 
+/* ---- About Me: Switch .page-rectangle to left of sceen ---- */
 
-
-
-/* ----------ABOUT ME PAGE ----------*/
-
-.content-text-wrapper {
-    /* width: 80%; */
-}
-.content-text-wrapper li {
-    /* text-align: left; */
-    list-style-position:inside;
-    /* padding-top: 10px; */ 
-    font-family: sans-serif;
-}
-
-/* BLOGS READ MORE */
-
-
-
-
-/* Move .page-rectangle to left of sceen on About Me page */
 @media only screen and (min-width: 500px){
     #rectangle-left {
         order: 1;
     }
 }
 
-
-
-
-/* -----CONTACT PAGE ----------*/
-
-.social-links {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color:  rgba( 82,161,137,0.7); 
-    margin: 10px 40px 40px 40px;
-    padding: 25px;
-    border-radius: 20px;
-    text-align: center;
-  }
-  
-  .social-links p, .message-me-form p {
-    color: white;
-    font-size: 1.8em;
-    font-family:'Fjalla One', sans-serif;
-    text-align: center;
-  }
-  
-  .social-links img {
-    /* width: 40px; */
-    margin: 30px 10px 0 20px;
-  }
-  
-  /* .social-links img:hover {
-    background-color: purple;
-    transition: 4s;
-  } */
-  
-  .message-me-form {
-    background-color: rgba( 82,161,137,0.7);
-    margin: 0px 40px 40px 40px;
-    padding: 25px;
-    border-radius: 20px;
-  }
-  
-  .message-me-form form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-  }
-  
-  .message-me-form form label {
-    text-align: left;
-    font-size: 1rem;
-    margin: 15px 0 10px 0;
-    color: white;
-  }
-  
-  .message-me-form form textarea,
-  .message-me-form form input[type=email],
-  .message-me-form form input[type=text] {
-    border-radius: 7px;
-    border: none;
-    padding: 12px 10px;
-    font-family: 'Mulish', sans-serif;
-    font-size: 0.8em;
-  }
-  
-  .message-me-form form input[type=submit] {
-    background-color: rgba(18, 29, 74, 0.582);
-    -webkit-box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.2);
-            box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.2);
-    border-radius: 7px;
-    color: white;
-    padding: 14px 20px;
-    margin: 25px 0 8px 0;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .message-me-form form input[type=submit]:hover {
-    background-color: rgba(244, 166, 124, 0.911);
-  }
-  
-  
-  
-  @media only screen and (min-width: 600px) {
-    .message-me-form,
-    .social-links {
-      width: 515px;
-      margin: 40px auto;
-    }
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* FOOTER */
-
-.footer-container {
-  display: flex;
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-.contact-links a {
-  padding: 0 5px;
-}
-
-
-
-
-/* CREATE READ MORE SECTIONS FOR BLOGS  */
-
+/* ---- Blog: Expandable sections ('read more') ---- */
 
 .expanded-text {
   height: 100px;
@@ -641,10 +466,87 @@ border-radius: 20px;
   height: 100%;
 }
 
-/* REMOVE BACKGROUND ON DESKTOP BLOG SIZE */
+/* --------------------- CONTACT PAGE --------------------- */
 
 
+/* ---- Links to socials/professional websites ---- */
+.social-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgba( 82,161,137,0.7); 
+    margin: 10px 40px 40px 40px;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+  }
+  
+  .social-links p, .message-me-form p {
+    color: white;
+    font-size: 1.8em;
+    font-family:'Fjalla One', sans-serif;
+    text-align: center;
+  }
+  
+  .social-links img {
+    margin: 30px 10px 0 20px;
+  }
+  
+  /* ---- Message me form ---- */
 
-}
+  .message-me-form {
+    background-color: rgba( 82,161,137,0.7);
+    margin: 0px 40px 40px 40px;
+    padding: 25px;
+    border-radius: 20px;
+  }
+  
+  .message-me-form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  
+  .message-me-form form label {
+    text-align: left;
+    font-size: 1rem;
+    margin: 15px 0 10px 0;
+    color: white;
+  }
+  
+  .message-me-form form textarea,
+  .message-me-form form input[type=email],
+  .message-me-form form input[type=text] {
+    border-radius: 7px;
+    border: none;
+    padding: 12px 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 0.8em;
+  }
+  
+  .message-me-form form input[type=submit] {
+    background-color: rgba(18, 29, 74, 0.582);
+    box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+    color: white;
+    padding: 14px 20px;
+    margin: 25px 0 8px 0;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .message-me-form form input[type=submit]:hover {
+    background-color: rgba(244, 166, 124, 0.911);
+  }
+  
+  /* Amend contact form size on screens 500px and up */
 
-/*# sourceMappingURL=style.css.map */
+  @media only screen and (min-width: 500px) {
+    .message-me-form,
+    .social-links {
+      width: 515px;
+      margin: 40px auto;
+    }
+  }
