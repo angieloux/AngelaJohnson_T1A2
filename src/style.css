@@ -30,20 +30,12 @@ a {
   color: white;
 }
 
-p, span, h3, content-text-wrapper li {
+p, span, h3 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: normal;
 }
 
-/* --------------------- FOOTER --------------------- */
-
-#copyright {
-  text-transform: uppercase;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 80%;
-}
-
-/* ---- Footer: home page ---- */
+/* ---- GRAPHICAL COMPONENT: FOOTER WITH CONTACT LOGOS (HOME PAGE) ---- */
 
 .footer-container {
   display: flex;
@@ -61,7 +53,7 @@ p, span, h3, content-text-wrapper li {
   padding: 0 5px;
 }
 
-/* ---- Footer: content pages ---- */
+/* ---- TEXT COMPONENT: FOOTER WITH COPYRIGHT (CONTENT PAGES) ---- */
 
 .footer-content-pages {
   display: flex;
@@ -71,8 +63,13 @@ p, span, h3, content-text-wrapper li {
   background-color: rgba(9, 14, 37, 0.9);
   width: 100%;
 }     
+#copyright {
+  text-transform: uppercase;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 80%;
+}
 
-/* --------------------- NAVIGATION / HEADER --------------------- */
+/* --------------------- TEXT COMPONENT: NAVIGATION/ HEADER --------------------- */
 
 /* ---- Nav: hamburger menu for mobile ---- */
 
@@ -92,7 +89,7 @@ p, span, h3, content-text-wrapper li {
     text-align: center;
     height: 70px;
     line-height: 70px;
-    top: 0px; */
+    top: 0px; 
     width: 100%;
     border-bottom: white solid 5px;
 }
@@ -132,7 +129,6 @@ p, span, h3, content-text-wrapper li {
 }
 
 /* ---- Nav: horizontal menu for tablet/desktop ---- */
-
 @media only screen and (min-width: 500px){
   
   .nav-list {
@@ -155,7 +151,7 @@ p, span, h3, content-text-wrapper li {
 
   }
   
-  /* ---- Nav: don't show hamburger menu ---- */
+/* ---- Nav: hide hamburger menu ---- */
   .nav-container label {
     display: none;
   }
@@ -166,7 +162,6 @@ p, span, h3, content-text-wrapper li {
   }
 
 /* ---- Nav: Expanding underline on hover ---- */
-
   .nav-list li::after{
     content: '';
     width: 0%;
@@ -204,9 +199,7 @@ p, span, h3, content-text-wrapper li {
     padding: 0 50px;
 }}
 
-
-/* --------------------- HOME PAGE CONTENT / INTRO --------------------- */
-
+/* ---------- TEXT COMPONENT: WELCOME, INTRO AND SUMMARY ---------- */
 .main-container {
   height: 80%;
   text-align: center;
@@ -264,9 +257,7 @@ h1 {
   padding-top: 15rem;
 }}
 
-
-/* ----- Main page content: call to action to download resume (pdf)  ----- */
-
+/* ----------------TEXT COMPONENT: CALL TO ACTION ----------------- */
 .call-to-action {
   display: block;
   border: white solid 2px;
@@ -289,10 +280,7 @@ h1 {
   border: 1px solid white;
   padding: 12px 13px;
 }
-
-
 /* --------------------- CONTENT PAGES (PROJECTS/ABOUT ME/BLOG --------------------- */
-
 
 /* ---- Align page content in one scrollable column on phone/tablet ---- */
 .page-container{
@@ -301,6 +289,7 @@ h1 {
     width: 100%;
 }
 
+/* --------------------- TEXT COMPONENT: PAGE TITLE BOX --------------------- */
 .page-rectangle {
     width: 100%;
     background-color:rgba(10, 78, 78, 0.1);
@@ -315,8 +304,9 @@ h1 {
     padding-top: 100px;
     font-size: 7em;
   }
-  
-.page-content {
+
+/* ---------- GRAPHICAL/TEXT COMPONENTS: PROJECTS / BLOG POSTS / ABOUT ME (content sizing) ---------- */
+  .page-content {
     display: flex;
     flex-wrap: wrap;
     background-color: whitesmoke;
@@ -335,107 +325,49 @@ h1 {
     padding: 20px 20px;
     font-size:1.8rem;
   }
-  
   .content-box {
     flex-direction: column;
     padding: 2rem 0;
     width: 100%;
     text-align: center;
-    /* margin: 10px 10px; */
   }
 
   .content-text {
     margin: 20px 20px;
 }
 
-.project-image, .blog-image {
+.content-text-wrapper {
+  border-radius: 20px;
+  }
+  .project-image, .blog-image {
     box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.2);
 }
 
-.icon-container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin-top: 2%;
-}
-
-.skill-icons {
-    margin: 2% 3%;
-}
-  
-/* ---- About Me: Taper experience paragraphs from right to left ---- */
-.right {
-  text-align: right;
-}
-.left {
-  text-align: left;
-}
-
-.content-text-wrapper {
-border-radius: 20px;
-}
-
 /* ---- Align page content in side-by-side boxes on tablet---- */
-
+  
 @media only screen and (min-width: 500px){
-    .page-container {
-        display: flex;
-        flex-direction: row-reverse;
-        height: inherit;
-    }
+  .page-container {
+      display: flex;
+      flex-direction: row-reverse;
+      height: inherit;
+  }
 
-    .page-content {
-        flex-basis: 50%;
-        flex-wrap: wrap;
-        padding: 10px 10px;
-        justify-content: center;
-        height: inherit;
-   }
-/* ---- Keep title text scrolling with .page-content ---- */
-    .page-rectangle {
-        flex-basis: 50%;
-        display: flex;
-        position: sticky;
-        top: 0px;
-    }
-}
-
-/* ---- 21 things: list styling ---- */
-
-.content-text-wrapper li {
-  list-style-position:inside; 
-}
-
-li::marker {
-  color: rgba(10, 19, 101, 0.423);
-  font-weight: bold;
-}
-
-@media only screen and (min-width: 770px){
-    .content-text-wrapper {
-        margin: auto 6%;
-        border-radius: 20px;
-    }
-    
-    .content-box {
-      flex-wrap: wrap;
+  .page-content {
       flex-basis: 50%;
-    }
-    
-    #about-me-box {
-    flex-basis: 80%;
-    }
+      flex-wrap: wrap;
+      padding: 10px 10px;
+      justify-content: center;
+      height: inherit;
+ }
+/* ---- Keep title text scrolling with .page-content ---- */
+  .page-rectangle {
+      flex-basis: 50%;
+      display: flex;
+      position: sticky;
+      top: 0px;
+  }
 }
-
-/* ---- About Me: Switch .page-rectangle to left of sceen ---- */
-
-@media only screen and (min-width: 500px){
-    #rectangle-left {
-        order: 1;
-    }
-}
-
-/* ---- Blog: Expandable sections ('read more') ---- */
+/* -------- GRAPHICAL COMPONENT: BLOG POSTS (expandable) -------- */
 
 .expanded-text {
   height: 100px;
@@ -463,10 +395,63 @@ li::marker {
   height: 100%;
 }
 
-/* --------------------- CONTACT PAGE --------------------- */
+/* ---- TEXT COMPONENT: ABOUT ME (Taper experience paragraphs from right to left) ---- */
+.right {
+  text-align: right;
+}
+.left {
+  text-align: left;
+}
 
+/* ---- switch .page-rectangle to the left ---- */
+@media only screen and (min-width: 500px){
+  #rectangle-left {
+      order: 1;
+  }
+}
 
-/* ---- Links to socials/professional websites ---- */
+/* ---------- GRAPHICAL COMPONENT: SKILLS ---------- */
+.icon-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.skill-icons {
+    margin: 2% 3%;
+}
+
+/* ---------- TEXT COMPONENT: 21 THINGS ---------- */
+.content-text-wrapper li {
+  list-style-position:inside; 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+li::marker {
+  color: rgba(10, 19, 101, 0.423);
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 770px){
+    .content-text-wrapper {
+        margin: auto 6%;
+        border-radius: 20px;
+    }
+    
+    .content-box {
+      flex-wrap: wrap;
+      flex-basis: 50%;
+    }
+    
+    #about-me-box {
+    flex-basis: 80%;
+    }
+}
+
+/* --------------------------------- CONTACT PAGE --------------------------------- */
+
+/* ---------- GRAPHICAL COMPONENT: SOCIAL LINKS WITH LOGO IMAGES ----------*/
 .social-links {
     display: flex;
     flex-direction: column;
@@ -490,8 +475,7 @@ li::marker {
     margin: 30px 10px 0 20px;
   }
   
-  /* ---- Message me form ---- */
-
+/* ---------- TEXT COMPONENT: MESSAGE ME FORM ----------*/
   .message-me-form {
     background-color: rgba( 82,161,137,0.7);
     margin: 0px 40px 40px 40px;
@@ -538,8 +522,7 @@ li::marker {
     background-color: rgba(244, 166, 124, 0.911);
   }
   
-  /* Amend contact form size on screens 500px and up */
-
+/* Amend contact form size on screens 500px and up */
   @media only screen and (min-width: 500px) {
     .message-me-form,
     .social-links {
