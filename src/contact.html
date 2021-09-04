@@ -4,49 +4,80 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Angela Johnson (AJ) | Melbourne-based aspiring web developer, philomath, avid traveller, vinyl collector, cinephile, game lover.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" integrity="">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/8347962c35.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Kaisei+HarunoUmi&family=Teko:wght@300;400&display=swap" rel="stylesheet">
-    <title>AJ | Web Developer</title>
+    <title>AJ | Contact</title>
 </head>
 
 <body>
 
+    <!-- TEXT COMPONENT: NAVIGATION BAR -->
     <header>
         <nav class="nav-container">
             <label for="hamburger-button">&#9776;</label>
             <input type="checkbox" id="hamburger-button">
             <ul class="nav-list" id="nav-list">
-                <li><a id="active-link" href="index.html">Home</a></li>
+                <li><a class="link" href="index.html">Home</a></li>
                 <li><a class="link" href="Projects.html">Projects</a></li>
                 <li><a class="link" href="AboutMe.html">About Me</a></li>
                 <li><a class="link" href="Blog.html">Blog</a></li>
-                <li><a class="link" href="Contact.html">Contact</a></li>
+                <li><a id="active-link" href="Contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- TEXT COMPONENT: MAIN CONTENT -->
-    <main class="main-container">
-        <h1 id="title">Hi! I'm AJ.</h1>
-        <h2 id="subtitle"> Aspiring web developer, philomath, avid traveller, vinyl collector, cinephile, game lover.</h2>
 
-        <!-- TEXT COMPONENT: CALL TO ACTION -->
-        <button class="call-to-action">
-            <a href="" target="_blank"> resume (pdf)
-                <i class="material-icons" id="download">download_for_offline</i></a>
-        </button>
+    <main>
+        <div class="social-container">
+        <!-- social links & contact me -->
+
+            <div class="social-links">
+                <p>Find me online:</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/angieloux" target="_blank"><img src="images/linkedin-logo.png"></a>
+                        <a href="https://github.com/angieloux" target="_blank"><img src="images/github-logo.png"></a>
+                        <!-- <a href="https://github.com/angieloux" target="_blank"><img src="images/stackoverflow-logo.png" width=60px></a> -->
+                    </div>
+            </div>
+
+            <!-- message me form -->
+
+            <div class="message-me-form">
+                <p>Wanna chat? Send me a message below:</p>
+                <form action="https://formspree.io/f/xnqllzje" method="POST">
+                    <label for="fullname">Full name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="Email" id="email" placeholder="example@domain.com" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Write your message here..." style="height:170px" required></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+           </div>
+
+        </div>
     </main>
+    <!-- MY STUFF -->
+  
+
+
+       
+  
 
     <!-- TEXT COMPONENT: FOOTER W/ CONTACT LINKS TO SOCIAL MEDIA -->
 
     <footer>
-        <div class="footer-container">
+        <div class="footer-container-hidden">
             <span>Find me:</span> 
             <div class="contact-links">
                 <a href="https://www.linkedin.com/in/angieloux" target="_blank">
@@ -64,6 +95,5 @@
 </div> <!-- /Page container -->
 </body>
 </html>
-
 
 <!-- TO DO: Change jpegs to png -->
