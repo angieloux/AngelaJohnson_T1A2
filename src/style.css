@@ -9,7 +9,7 @@ body {
   color: white;
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)),url(/src/Images/home-background-phone.png);
+  background-image: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)),url(./Images/home-background-phone.png);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -19,7 +19,7 @@ body {
 
 @media only screen and (min-width: 500px){
   body {
-    background-image: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)),url(/src/Images/home-background-scale.png);
+    background-image: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)),url(./Images/home-background-scale.png);
     background-color:rgba(9, 22, 56, 0.7);
   }
 }
