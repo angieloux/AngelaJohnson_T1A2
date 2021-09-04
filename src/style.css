@@ -14,15 +14,16 @@ body {
   background-size: cover;
   position: relative;
   background-attachment: fixed;
+  background-color:rgba(9, 22, 56, 0.7);
 }
 
 .footer-content-pages {
   display: flex;
   justify-content: center;
-  margin-right: 3rem;
+  position: fixed;
+  bottom: 0px;
   background-color: rgba(9, 14, 37, 0.9);
   width: 100%;
-  /* border-top: 1px white solid; */
 }     
 
 #copyright {
@@ -34,17 +35,10 @@ body {
 @media only screen and (min-width: 500px){
     body {
       background-image: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)),url(/src/Images/home-background-scale.png);
-    }
-  
-     
+      background-color:rgba(9, 22, 56, 0.7);
     }
 }
-@media only screen and (min-width: 770px){
-.footer-container {
 
-}
-
-}
 
 a {
     text-transform: uppercase;
@@ -209,14 +203,10 @@ p, span {
   text-align: center;
   position: relative;
   display: flex;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; 
-  padding-top: 7rem;
+  padding-top: 5.5rem;
 }
 
 h1, .main-container h2, .link {
@@ -230,11 +220,34 @@ h1 {
   font-size: 3.7rem;
   line-height: 3rem;
   text-shadow: 2px 2px #0a1f11;
-  padding-top: 100px;
+  padding-top: 5rem;
   font-weight: bold;
-  text-decoration:underline overline ;
+  text-decoration:underline overline;
   text-underline-offset: 10px;
 }
+
+/* Don't display find me on mobile */
+
+@media only screen and (min-width: 500px){
+  .main-container {
+  padding-top: 15rem;
+  }
+  #find-me {
+    display: unset;
+    font-family: ;
+}}
+
+@media only screen and (min-width: 1000px){
+  .main-container {
+  padding-top: 10rem;
+
+}
+}
+
+@media only screen and (min-width: 1500px){
+  .main-container {
+  padding-top: 15rem;
+}}
 
 .main-container h2 {
   width: 80vw;
@@ -486,9 +499,11 @@ border-radius: 20px;
     text-align: center;
   }
   
-  .social-links p {
+  .social-links p, .message-me-form p {
     color: white;
-    font-size: 1.2em;
+    font-size: 1.8em;
+    font-family:'Fjalla One', sans-serif;
+    text-align: center;
   }
   
   .social-links img {
@@ -533,7 +548,7 @@ border-radius: 20px;
   }
   
   .message-me-form form input[type=submit] {
-    background-color: rgba( 21, 64,113,0.7);
+    background-color: rgba(18, 29, 74, 0.582);
     -webkit-box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.2);
             box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.2);
     border-radius: 7px;
@@ -545,13 +560,10 @@ border-radius: 20px;
   }
   
   .message-me-form form input[type=submit]:hover {
-    background-color: rgba(244,166,124,1);
+    background-color: rgba(244, 166, 124, 0.911);
   }
   
-  .message-me-form p {
-    text-align: center;
-    font-size: 1.2em;
-  }
+  
   
   @media only screen and (min-width: 600px) {
     .message-me-form,
@@ -593,26 +605,10 @@ border-radius: 20px;
   margin-bottom: 3rem;
 }
 
-.contact-links {
-  font-size: 3rem;
+.contact-links a {
+  padding: 0 5px;
 }
 
-/* Don't show footer on projects/aboutme/blog */
-.footer-container-hidden {
-    /* display: none; */
-}
-/* Correcting for Tablet*/
-
-/* 
-  @media only screen and (min-width: 900px) {
-    .footer-container {
-        padding-top: 150px;
-    
-      }
-
-} */
-
-/* Correcting for desktop 1000 and above */
 
 
 
