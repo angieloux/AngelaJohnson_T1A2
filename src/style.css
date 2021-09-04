@@ -16,20 +16,35 @@ body {
   background-attachment: fixed;
 }
 
+.footer-content-pages {
+  display: flex;
+  justify-content: center;
+  margin-right: 3rem;
+  background-color: rgba(9, 14, 37, 0.9);
+  width: 100%;
+  /* border-top: 1px white solid; */
+}     
 
+#copyright {
+  text-transform: uppercase;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 80%;
+}
 
 @media only screen and (min-width: 500px){
     body {
       background-image: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)),url(/src/Images/home-background-scale.png);
     }
   
-    .footer-container {
-      position: fixed;
-      margin-bottom: 10px;
+     
     }
 }
-#more {display: none;}
+@media only screen and (min-width: 770px){
+.footer-container {
 
+}
+
+}
 
 a {
     text-transform: uppercase;
@@ -305,7 +320,7 @@ li::marker {
  
   .content-titles {
     padding: 20px 20px;
-    font-size:3rem;
+    font-size:1.8rem;
   }
   
   article {
@@ -395,9 +410,6 @@ border-radius: 20px;
     .content-text {
         margin: 0;
     }
-    .project-image {
-        /* flex-basis: 100%; */
-    }
 
 }
 
@@ -416,7 +428,6 @@ border-radius: 20px;
     }
     
     .content-box {
-      flex-direction: row;
       flex-wrap: wrap;
       flex-basis: 50%;
     }
@@ -588,7 +599,7 @@ border-radius: 20px;
 
 /* Don't show footer on projects/aboutme/blog */
 .footer-container-hidden {
-    display: none;
+    /* display: none; */
 }
 /* Correcting for Tablet*/
 
@@ -604,32 +615,9 @@ border-radius: 20px;
 /* Correcting for desktop 1000 and above */
 
 
-#title {
-    /* color: rgba(244,166,124,1); */
-    /* color: rgba( 82,161,137,1);	 */
-    /* color: rgba( 82,161,137,1); */
-    /* color: rgba(160,234,212,1); */
-    /* color: rgba(  9,101, 73,1); */
-    /* color: rgba(  0,  0,  0,1); */
-/*  */
-    /* color: rgba( 94,131,173,1);	 */
-    /* color: rgba( 94,131,173,1); */
-    /* color: rgba(179,208,241,1); */
-    /* color: rgba( 21, 64,113,1); */
-    /* color: rgba(  0,  0,  0,1); */
-/*  */
-    /* color: rgba(152,224,114,1);	 */
-    /* color: rgba(152,224,114,1); */
-    /* color: rgba(204,250,179,1); */
-    /* color: rgba( 64,150, 17,1); */
-    /* color: rgba(  0,  0,  0,1); */
-    /*  */
-    /* color: rgba(244,166,124,1);	 */
-    /* color: rgba(255,255,255,1); */
-    /* color: rgba(255,201,172,1); */
-    /* color: rgba(158, 67, 19,1); */
-    /* color: rgba( 37, 16,  5,1); */
-}
+
+/* CREATE READ MORE SECTIONS FOR BLOGS  */
+
 
 .expanded-text {
   height: 100px;
@@ -657,5 +645,10 @@ border-radius: 20px;
   height: 100%;
 }
 
+/* REMOVE BACKGROUND ON DESKTOP BLOG SIZE */
+
+
+
+}
 
 /*# sourceMappingURL=style.css.map */
