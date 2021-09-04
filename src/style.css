@@ -35,7 +35,6 @@ p, span, h3, content-text-wrapper li {
   font-weight: normal;
 }
 
-
 /* --------------------- FOOTER --------------------- */
 
 #copyright {
@@ -72,7 +71,6 @@ p, span, h3, content-text-wrapper li {
   background-color: rgba(9, 14, 37, 0.9);
   width: 100%;
 }     
-
 
 /* --------------------- NAVIGATION / HEADER --------------------- */
 
@@ -134,7 +132,6 @@ p, span, h3, content-text-wrapper li {
 }
 
 /* ---- Nav: horizontal menu for tablet/desktop ---- */
-
 
 @media only screen and (min-width: 500px){
   
