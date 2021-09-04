@@ -28,6 +28,7 @@ body {
       margin-bottom: 10px;
     }
 }
+#more {display: none;}
 
 
 a {
@@ -36,7 +37,7 @@ a {
     color: white;
   }
 
-p {
+p, span {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -409,15 +410,24 @@ border-radius: 20px;
         border-radius: 20px;
     
     }
-
-
+    
+    .page-content {
+      flex-wrap: wrap;
+    }
+    
+    .content-box {
+      flex-direction: row;
+      flex-wrap: wrap;
+      flex-basis: 50%;
+    }
+    
     
     #about-me-box {
     flex-basis: 80%;
     
     }
 
-
+   
 }
 
 
@@ -435,6 +445,10 @@ border-radius: 20px;
     font-family: sans-serif;
 }
 
+/* BLOGS READ MORE */
+
+
+
 
 /* Move .page-rectangle to left of sceen on About Me page */
 @media only screen and (min-width: 500px){
@@ -442,6 +456,8 @@ border-radius: 20px;
         order: 1;
     }
 }
+
+
 
 
 /* -----CONTACT PAGE ----------*/
@@ -614,5 +630,32 @@ border-radius: 20px;
     /* color: rgba(158, 67, 19,1); */
     /* color: rgba( 37, 16,  5,1); */
 }
+
+.expanded-text {
+  height: 100px;
+  overflow: hidden;
+}
+.blog-text {
+  position: relative;
+  display: flex;
+}
+.blog-text label {
+  position: relative;
+  justify-content: flex-start;
+  margin: 5%;
+}
+.blog-text input {
+  display: none;
+}
+.blog-text label::after {
+  content: "Read More";
+}
+.blog-text input:checked + label::after {
+  content: "Show Less";
+}
+.blog-text input:checked ~ .expanded-text {
+  height: 100%;
+}
+
 
 /*# sourceMappingURL=style.css.map */
