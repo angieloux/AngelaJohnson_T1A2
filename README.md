@@ -3,8 +3,10 @@ Since superseded by [V2](https://github.com/angieloux/portfolio-v2).
 
 ## **Website Overview**
 
+![Home page](/docs/Screenshots/Desktop-(1920x1080)/Home.png)
+
 ## **Purpose**
-    I created this website as a means to present myself as an aspiring web developer to prospective employers. It was important for me to showcase my personality and skill through thoughtful and responsive design, complementary colours, styles and images, accompanying information about my experience, what I'm interested in, and some sample blog and projects.
+I created this website as a means to present myself as an aspiring web developer to prospective employers. It was important for me to showcase my personality and skill through thoughtful and responsive design, complementary colours, styles and images, accompanying information about my experience, what I'm interested in, and some sample blog and projects.
 
 ## **Functionality/Features**
 
@@ -45,15 +47,9 @@ The website is comprised of 5 html pages and one style.css file (mobile-first st
   
 ## **Sitemap**
 
-.XML FILE
+[.XML FILE](./docs/Sitemap.xml)
 
-  * [Google drive link](https://drive.google.com/file/d/1b-wgYepXLb2MmiR3ACCDI2GhmE-WRIys/view?usp=sharing) | [Local link](./docs/Sitemap.xml) | File path: *./src/sitemap.xml*
-
-.PNG FILE
-  * [External link](https://drive.google.com/file/d/1dGP5ZmtCUoS8PgQFGHFd1u7WUo3AKrZY/view?usp=sharing) | File path: *./docs/sitemap.png*
-
-![Sitemap.png](./docs/Sitemap.png)
-
+![Sitemap.png](/docs/sitemap.png)
 
 ## **Screenshots**
 
@@ -67,8 +63,7 @@ The website is comprised of 5 html pages and one style.css file (mobile-first st
 
 
 ## **Target audience:**
-
-    My target audience is a hiring manager or potential employer who is searching for a web dev or IT professional. Ideally, their technical knowledge would be sound, so as to understand the scope of work involved within this portfolio piece and be able to assess if my skills are in line with what they are searching for in a candidate. 
+My target audience is a hiring manager or potential employer who is searching for a web dev or IT professional. Ideally, their technical knowledge would be sound, so as to understand the scope of work involved within this portfolio piece and be able to assess if my skills are in line with what they are searching for in a candidate. 
 
 
 ## **Tech stack**
