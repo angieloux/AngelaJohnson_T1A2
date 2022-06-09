@@ -1,7 +1,5 @@
-# AJ's Website: T1A2 Portfolio Assignment
-
-**Deployed Website:** *[Netlify link](https://alj-codes.netlify.app/)*
-**GitHub Repo**: *[Github link](https://github.com/angieloux/AngelaJohnson_T1A2)*
+# Portfolio website V1
+Since superseded by [V2](https://github.com/angieloux/portfolio-v2).
 
 ## **Website Overview**
 
